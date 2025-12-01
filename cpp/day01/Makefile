@@ -12,7 +12,7 @@ mk.deps:
 	$(CXX) -MM *.cpp > mk.deps
 
 main.exe: Makefile mk.deps $(OBJECTS)
-	g++ -o main.exe $(OBJECTS)
+	$(CXX) -o main.exe $(OBJECTS)
 
 clean:
 	rm -fr *.o a.out main.exe mk.deps
