@@ -42,3 +42,6 @@
 
 # Dependency tracking
 mk.deps
+
+# Edited files.
+*~
