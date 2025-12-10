@@ -1,13 +1,9 @@
 //
-// main.cpp : Linen Layout
+// main.cpp : Secret Entrance
 //
 
 #include "common.h"
-#include <stdio.h>
 #include <iostream>
-#include <cstdint>
-
-const number BIG_NUMBER = 1000000000000L;
 
 int part1(const char* file_name) {
     std::vector<std::string> lines = read_input_file(file_name);
