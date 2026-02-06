@@ -1,0 +1,17 @@
+s(aaa,you).
+s(aaa,hhh).
+s(you,bbb).
+s(you,ccc).
+s(bbb,ddd).
+s(bbb,eee).
+s(ccc,ddd).
+s(ccc,eee).
+s(ccc,fff).
+s(ddd,ggg).
+s(eee,out).
+s(fff,out).
+s(ggg,out).
+s(hhh,ccc).
+s(hhh,fff).
+s(hhh,iii).
+s(iii,out).
