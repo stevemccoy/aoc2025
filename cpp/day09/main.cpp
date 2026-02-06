@@ -38,12 +38,53 @@ number part1(const char* file_name) {
     return max_area;
 }
 
+// 0 = no crossings
+// 1 = simple line crossings.
+// 2 = shared portion of edge.
+int classify_crossings(
+    const std::pair<Coord,Coord>& line,
+    const std::vector<std::pair<Coord,Coord>>& edges) {
+
+    for (auto e : edges) {
+	
+    }
+}
+
+
 number part2(const char* file_name) {
     std::vector<std::string> lines = read_input_file(file_name);
     std::string line;
     std::map<number, number> beams, changes;
     std::string s;
     number count = 0L;
+    std::vector<Coord> tiles;
+    for (auto rawline : lines) {
+        tiles.push_back(process_line(rawline));
+    }
+
+    std::vector<std::pair<Coord,Coord>> edges;
+    std::vector<std::pair<Coord,Coord>> patches;
+
+    std::pair<Coord,Coord> p, e1, e2;
+    for (int i = 1; i < tiles.size(); i++) {
+	p.first = tiles[i - 1];
+	p.second = tiles[i];
+	edges.emplace_back(p);
+    }
+    p.first = p.second;
+    p.second = tiles[0];
+    edges.emplace_back(p);
+
+    for (int i = 1; i < edges.size(); i++) {
+	e1 = edges[i - 1];
+	e2 = edges[i];
+
+	e1.first 
+    }
+    
+/*
+    Trace red tiles round circuit
+*/
     return count;
 }
 
